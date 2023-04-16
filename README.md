@@ -23,7 +23,7 @@ web: https://blog.betazhu.top/about/
 
 ## 主题演示地址
 
-- [小 A 猪崽](https://blog.betazhu.top/about/)
+- [小Q导航](https://blog.betazhu.top/about/)
   
 | 完成度      | 自定义修改 | 
 | :---       |   :----:  | 
