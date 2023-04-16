@@ -1,17 +1,15 @@
 #!/bin/sh
 
 # 定义变量
-repo_owner="zhujijqiu" # 仓库所有者
-repo_name="nag_site"   # 仓库名称
-dockerfile_path="dockerfile" # Dockerfile 文件路径
-dockercompose_path="docker-compose.yaml" # docker-compose 文件路径
 
 # 下载 Dockerfile 文件
-wget "https://raw.githubusercontent.com/${repo_owner}/${repo_name}/master/${dockerfile_path}"
+wget "https://raw.githubusercontent.com/zhujinqiu/nag_site/master/dockerfile"
+
 echo "Dockerfile 下载完成！"
 
 # 下载 docker-compose 文件
-wget "https://raw.githubusercontent.com/${repo_owner}/${repo_name}/master/${dockercompose_path}"
+wget "https://raw.githubusercontent.com/zhujinqiu/nag_site/master/docker-compose.yaml"
+
 echo "docker-compose 文件下载完成！"
 
 # 构建 Docker 镜像
