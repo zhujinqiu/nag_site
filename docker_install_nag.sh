@@ -19,5 +19,5 @@ echo "docker-compose 文件下载完成！"
 # echo "Docker 镜像构建完成！"
 
 # 启动 Docker 容器
-docker-compose -f "${dockercompose_path}" up -d
+docker-compose  up
 echo "Docker 容器已启动！"
