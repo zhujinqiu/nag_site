@@ -7,11 +7,11 @@ dockerfile_path="dockerfile" # Dockerfile 文件路径
 dockercompose_path="docker-compose.yaml" # docker-compose 文件路径
 
 # 下载 Dockerfile 文件
-curl -o "${dockerfile_path}" "https://raw.githubusercontent.com/${repo_owner}/${repo_name}/master/${dockerfile_path}"
+wget "https://raw.githubusercontent.com/${repo_owner}/${repo_name}/master/${dockerfile_path}"
 echo "Dockerfile 下载完成！"
 
 # 下载 docker-compose 文件
-curl -o "${dockercompose_path}" "https://raw.githubusercontent.com/${repo_owner}/${repo_name}/master/${dockercompose_path}"
+wget "https://raw.githubusercontent.com/${repo_owner}/${repo_name}/master/${dockercompose_path}"
 echo "docker-compose 文件下载完成！"
 
 # 构建 Docker 镜像
