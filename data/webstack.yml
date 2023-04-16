@@ -22,6 +22,11 @@
       logo: 贴吧.ico
       url: https://tieba.baidu.com/
       description: 中文社区
+    - title: chatgpt官网
+      logo: chatgpt.png
+      url: https://chat.openai.com/
+      description: 划时代语言聊天模型
+    
 - taxonomy: 邮箱导航
   icon: fa fa-envelope
   links:
@@ -369,11 +374,7 @@
           logo: halo.ico
           description: halo博客，强大的前后端结合
 
-        
-
-
-
-
+     
 - taxonomy: 素材资源
   icon: far fa-folder-open fa-lg
   list:

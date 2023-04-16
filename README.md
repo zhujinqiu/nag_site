@@ -30,4 +30,3 @@ web: https://blog.betazhu.top/about/
 - [x] 导航栏样式（个人感觉更好看）
 
 ### 爱发电支持我 *！*
-[微信支付](https://raw.githubusercontent.com/i-kirito/i-kirito/main/img/wechat.png) | [支付宝](https://raw.githubusercontent.com/i-kirito/i-kirito/main/img/alipay.png) | [PayPal](https://www.paypal.com/paypalme/ikirito9)
