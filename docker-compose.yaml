@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+  hug-nag:
+    build: .
+    ports:
+      - "1313:1313"
