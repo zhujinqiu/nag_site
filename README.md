@@ -1,6 +1,6 @@
 
 
-web: https://blog.betazhu.top/about/
+本人Blog: [秋](https://blog.betazhu.top)
 ---
 
 ## 这是 Hugo 版 WebStack 主题
@@ -17,26 +17,54 @@ web: https://blog.betazhu.top/about/
 
 ## 快速部署
 
-- docker
+- docker部署
 
-  不用clone
+  不用clone，安装好Docker环境
 
-  - ```bash
-    wget "https://raw.githubusercontent.com/zhujinqiu/nag_site/master/docker_install_nag.sh" && chmod 700 docker_install_nag.sh && ./docker_install_nag.sh
-    ```
+  ```bash
+  wget "https://raw.githubusercontent.com/zhujinqiu/nag_site/master/docker_install_nag.sh" && chmod 700 docker_install_nag.sh && ./docker_install_nag.sh
+  ```
+
+- 非docker部署
+
+  安装Hugo
+
+  ```bash
+  ## 安装环境
+  apt-get update
+  apt-get -y install hugo
+  apt-get -y install net-tools
+  apt-get -y install git
+  ```
+
+  ```bash
+  ## 读取本机ip
+  host_ip=$(ifconfig eth0 | grep "inet " | awk '{ print $2}')
+  ```
+
+  下载GitHub仓库
+
+  ```bash
+  git clone https://github.com/zhujinqiu/nag_site.git
+  cd nag_site
+  ```
+
+  运行
+
+  ```bash
+  hugo server --baseUrl=$host_ip --bind=0.0.0.0 ## $host_ip本机ip   0.0.0.0 放服务器上任何用户可远程访问。
+  ```
+
+  
+
+
 
 ## 项目成立于 2023 年 4 月 16日
 
-- 这是本人第一次真正意义上使用 *vercel* 搭建网页，减少自购的阿里云学生云服务器本身的负载。
-- 域名托管利用 *Cloudflare* 加速，以保证访问速度和避免备案的麻烦。
+- 这是本人第一次搭建导航站。
+- 目前挂载在服务器上
 
 ## 主题演示地址
 
-- [小Q导航](https://blog.betazhu.top/about/)
+- 
 
-| 完成度 | 自定义修改 |
-| :----- | :--------: |
-
-- [x] 导航栏样式（个人感觉更好看）
-
-### 爱发电支持我 *！*
