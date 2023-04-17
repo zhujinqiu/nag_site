@@ -16,7 +16,7 @@
   list:
     - name: 源码
       icon: fab fa-github-alt
-      link: "https://github.com/zhujinqiu/nav-site"
+      link: "https://github.com/zhujinqiu/nag-site"
     - name: 图标
       icon: fab fa-font-awesome
       link: "https://fontawesome.com/"
